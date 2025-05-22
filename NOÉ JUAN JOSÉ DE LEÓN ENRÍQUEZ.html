@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cambio Climático en Guatemala</title>
+  <meta name="description" content="Información sobre los efectos, impactos y soluciones del cambio climático en Guatemala.">
+  <meta name="author" content="Observatorio Climático de Guatemala">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f9fc;
+      color: #2e3d49;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to right, #155a71, #168aad);
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #145a6a;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #a8e8ff;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    section {
+      margin-bottom: 70px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #125266;
+      font-size: 1.9em;
+      margin-bottom: 20px;
+      border-left: 6px solid #168aad;
+      padding-left: 12px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    figure {
+      margin: 30px 0 10px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 620px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #555;
+      font-style: italic;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin-top: 15px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.05em;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      background: #e0f4ff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .stat h3 {
+      margin: 0;
+      font-size: 2em;
+      color: #168aad;
+    }
+
+    .stat p {
+      margin-top: 5px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      background-color: #168aad;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 0.95em;
+      margin-top: 60px;
+      border-top: 4px solid #145a6a;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cambio Climático en Guatemala</h1>
+    <p>Una amenaza real que requiere acción inmediata</p>
+  </header>
+
+  <nav>
+    <a href="#que-es">¿Qué es?</a>
+    <a href="#impactos">Impactos</a>
+    <a href="#soluciones">Soluciones</a>
+    <a href="#datos">Datos clave</a>
+    <a href="#ayuda">¿Cómo ayudar?</a>
+  </nav>
+
+  <main>
+    <section class="card" id="que-es">
+      <h2>¿Qué es el cambio climático?</h2>
+      <p>
+        El cambio climático es una modificación significativa y duradera en los patrones del clima global.
+        En Guatemala, este fenómeno ya ha comenzado a alterar los ecosistemas, las economías locales y la vida diaria de millones de personas.
+      </p>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Global_Temperature_Anomaly.svg/1280px-Global_Temperature_Anomaly.svg.png" alt="Gráfico de temperaturas globales" />
+        <figcaption>Aumento de temperaturas globales en los últimos siglos.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card" id="impactos">
+      <h2>Impactos en Guatemala</h2>
+      <ul>
+        <li>Aumento de temperaturas y olas de calor intensas.</li>
+        <li>Reducción de fuentes de agua y sequías prolongadas.</li>
+        <li>Eventos climáticos extremos como huracanes e inundaciones.</li>
+        <li>Afectación en la agricultura, seguridad alimentaria y salud pública.</li>
+      </ul>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flood_in_Guatemala_Stan_2005.jpg/800px-Flood_in_Guatemala_Stan_2005.jpg" alt="Inundaciones en Guatemala" />
+        <figcaption>Inundaciones en Guatemala tras el huracán Stan (2005).</figcaption>
+      </figure>
+    </section>
+
+    <section class="card" id="soluciones">
+      <h2>¿Qué soluciones existen?</h2>
+      <ul>
+        <li>Impulsar la reforestación y la conservación de cuencas.</li>
+        <li>Fomentar el uso de energías limpias como la solar y eólica.</li>
+        <li>Adaptar la agricultura a técnicas sostenibles y resilientes.</li>
+        <li>Educar a la población sobre prácticas ambientales responsables.</li>
+      </ul>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Solar_panels_panasonic_plant_Kusatsu_Japan.jpg/1280px-Solar_panels_panasonic_plant_Kusatsu_Japan.jpg" alt="Paneles solares en Japón" />
+        <figcaption>El uso de energías limpias es una de las soluciones al cambio climático.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card" id="datos">
+      <h2>Datos clave</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3>+1.5°C</h3>
+          <p>Incremento promedio en temperatura en los últimos 50 años.</p>
+        </div>
+        <div class="stat">
+          <h3>70%</h3>
+          <p>De los cultivos podrían verse afectados para 2050.</p>
+        </div>
+        <div class="stat">
+          <h3>40%</h3>
+          <p>Reducción en disponibilidad de agua en algunas regiones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="ayuda">
+      <h2>¿Cómo puedes ayudar?</h2>
+      <ul>
+        <li>Reduce tu huella de carbono usando transporte sostenible.</li>
+        <li>Participa en jornadas de reforestación o limpieza.</li>
+        <li>Consume productos locales y de temporada.</li>
+        <li>Infórmate y educa a otros sobre el cambio climático.</li>
+      </ul>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Reforestation_project.jpg" alt="Reforestación por voluntarios" />
+        <figcaption>Voluntarios plantando árboles en un proyecto de reforestación.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Observatorio Climático de Guatemala. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
